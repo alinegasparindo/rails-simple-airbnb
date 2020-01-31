@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Check all the flats 🛏</h1>
+  <div class="cards">
+    <% @flats.each do |flat| %>
+      <div class="card-flat">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg" />
+        <div class="card-flat-infos">
+          <div>
+            <h2><%= flat.name  %></h2>
+            <h3><%= flat.address  %></h3>
+            <div class="icons">
+              <p>💰<%= flat.price_per_night %></p>
+              <p>🙃 <%= flat.number_of_guests %></p>
+            </div>
+          </div>
+        </div>
+          <div class="card-more-info">
+            <p>links</p>
+            <p>links</p>
+            <p>links</p>
+          </div>
+      </div>
+    <% end %>
+  </div>
+</div>
